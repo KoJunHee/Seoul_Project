@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/background">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <!-- vertical 수직 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로가기" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="태그를 선택하세요" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 태그 버튼 5개 있는 레이아웃1-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag1"
+                android:tag="1"
+                android:text="태그1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag2"
+                android:tag="0"
+                android:text="태그2"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag3"
+                android:tag="0"
+                android:text="태그3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag4"
+                android:tag="0"
+                android:text="태그4"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag5"
+                android:tag="0"
+                android:text="태그5"/>
+
+        </LinearLayout>
+
+        <!-- 태그 버튼 5개 있는 레이아웃2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag6"
+                android:tag="0"
+                android:text="태그6"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag7"
+                android:tag="0"
+                android:text="태그7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag8"
+                android:tag="0"
+                android:text="태그8"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag9"
+                android:tag="0"
+                android:text="태그9"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag10"
+                android:tag="0"
+                android:text="태그10"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/write_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목을 입력하세요"/>
+
+        <LinearLayout
+            android:id="@+id/write_content_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/write_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="내용을 입력하세요"/>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배경을 선택하세요"/>
+
+            <Button
+                android:id="@+id/paper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="배경1"/>
+
+            <Button
+                android:id="@+id/paper2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="배경2"/>
+
+            <Button
+                android:id="@+id/paper3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:text="배경3"/>
+
+            <Button
+                android:id="@+id/paper4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="4"
+                android:text="배경4"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/select_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/write_tag"
+            android:bufferType="spannable"
+            android:hint="태그를 입력하세요"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/write_detail"
+            android:hint="기타 상세정보를 입력하세요"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/keyboard_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#ffff00" >
+
+    <LinearLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/font_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="폰트/사이즈"/>
+
+        <TextView
+            android:id="@+id/effect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="효과"/>
+
+        <TextView
+            android:id="@+id/sort_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="정렬"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/font_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/effect_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="정렬"/>
+
+        <Button
+            android:id="@+id/text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="왼쪽"/>
+
+        <Button
+            android:id="@+id/text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가운데"/>
+
+        <Button
+            android:id="@+id/text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오른쪽"/>
+
+        <Button
+            android:id="@+id/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기본"/>
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

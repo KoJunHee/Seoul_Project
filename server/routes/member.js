@@ -9,6 +9,7 @@ aws.config.loadFromPath('./config/aws_config.json');
 const pool = require('../config/db_pool');
 const s3 = new aws.S3();
 const bcrypt = require('bcryptjs'); //해쉬용 확장모듈, 윈도우에서 돌릴때는 js 빼고 돌려야 함
+
 const upload = multer({
   storage: multerS3({
     s3: s3,
@@ -20,7 +21,7 @@ const upload = multer({
   })
 });
 const saltRounds = 10;
-//
+
 //회원가입
 router.post('/',upload.single('photo'), function(req, res){
   let query = 'select * from user where email = ?';

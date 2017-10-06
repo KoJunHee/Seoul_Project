@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">SeoulPoem</string>
+<<<<<<< HEAD
     <string name="choice01">공유하기</string>
     <string name="choice02">상세정보</string>
     <string name="choice03">수정하기</string>
+=======
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+>>>>>>> e7f349c0f1b2cdd4fbf67ad7acde366ac724c415
 </resources>

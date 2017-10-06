@@ -20,7 +20,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.seoulprojet.seoulpoem.R;
 import com.seoulprojet.seoulpoem.model.HashtagListData;
 import com.seoulprojet.seoulpoem.model.Poem;
@@ -288,6 +287,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
 
     /***********************************Hash Tag**********************************/
     public void toHashtag() {
@@ -399,4 +399,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+=======
+>>>>>>> e7f349c0f1b2cdd4fbf67ad7acde366ac724c415
 }

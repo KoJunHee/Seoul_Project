@@ -5,8 +5,8 @@ const fs = require('fs');
 //const https = require('https');
 
 var options = {
-  key : fs.readFileSync('./jungin.pem'),
-  cert : fs.readFileSync('./jungin_certi.pem'),
+  key : fs.readFileSync('./new.pem'),
+  cert : fs.readFileSync('./new_cert.pem'),
 }
 
 
